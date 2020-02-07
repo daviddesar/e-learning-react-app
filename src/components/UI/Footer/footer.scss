@@ -1,0 +1,74 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.footer {
+    background-color: black;
+    .footer__container1 {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto 1em;
+      padding: 2rem 0;
+      .footerList {
+        ul {
+          list-style: none;
+          padding: 0.8em 0 0;
+          li {
+            padding: 0.1em 0;
+            a {
+              text-decoration: none;
+              color: white;
+              &:hover {
+                color: $green-default;
+                transition: 0.3s all;
+              }
+            }
+          }
+        }
+        .title {
+          color: $green-default;
+          font-weight: bold;
+        }
+      }
+    }
+    .footerContainer2 {
+      border-top: 1px solid rgba(128, 128, 128, 0.3);
+      padding: 0.7em 0;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      .footerLogo {
+        display: flex;
+        align-items: center;
+        .logo {
+          margin-right: 0.5em;
+          font-size: 1.5em;
+          text-decoration: none;
+          color: #222529;
+          font-family: "Source Code Pro";
+          // font-weight: bold;
+          .fa {
+            color: $green-default;
+          }
+        }
+        .copyright {
+          font-size: 0.9em;
+        }
+      }
+      .footerContent {
+        a {
+          text-decoration: none;
+          color: white;
+          margin-right: 1em;
+          transition: color 0.3s linear;
+          &:hover {
+            color: $green-default;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,19 @@
+@import './variable';
+.btn-default {
+  background-color: $green-default;
+  border: none;
+  color: white;
+  transition: background-color 0.3s linear;
+  &:hover {
+    background-color: $green-hover;
+  }
+}
+.btn-black {
+  border: none;
+  background-color: black;
+  color: $green-default;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}

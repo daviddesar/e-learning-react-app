@@ -1,0 +1,13 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.alsoLike {
+    width: 80%;
+    margin: 2rem auto;
+    .alsoLike__header {
+        font-size: 1.7rem;
+        color: $green-default;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+}

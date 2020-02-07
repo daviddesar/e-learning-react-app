@@ -1,0 +1,48 @@
+@import '../../../../scss/reset';
+@import '../../../../scss/variable';
+
+.right__item {
+    margin: 0.6rem;
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    transition: box-shadow 0.2s linear;
+    &:hover {
+        box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+    }
+    .item__img {
+      max-width: 100%;
+      height: auto;
+    }
+    .item__title {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-top: none;
+      padding: 0.9rem 1rem 3rem;
+      font-size: 1.3rem;
+      color: $green-default;
+      font-weight: 500;
+      margin: 0;
+      min-height: 125px;
+    }
+    .item__intro {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      .intro__title {
+        color: rgba(208, 208, 208, 0.802);
+        font-weight: 500;
+        margin-bottom: 0.1rem;
+      }
+      .intro__subject {
+        color: white;
+      }
+      .intro__tag {
+        border-radius: 0.2rem;
+        background-color: $green-default;
+        text-align: center;
+        width: 4rem;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }

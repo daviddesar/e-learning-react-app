@@ -1,0 +1,36 @@
+@import '../../../../scss/components';
+@import '../../../../scss/reset';
+@import '../../../../scss/variable';
+
+.cart__box {
+    display: none;
+    padding: 0.5rem 0 0;
+    text-align: center;
+    color: green;
+    position: absolute;
+    z-index: 20;
+    border: 1px solid white;
+    background-color: white;
+    top: 96%;
+    left: 66.5%;
+    width: 560px;
+    &:hover {
+      display: block;
+    }
+    // triangle
+    &::before {
+      position: absolute;
+      content: "";
+      top: -16px;
+      left: 310px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid white;
+    }
+    .cart__text {
+      color: $green-default;
+    }
+  }
+

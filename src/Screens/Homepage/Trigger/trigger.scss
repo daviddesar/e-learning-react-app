@@ -1,0 +1,61 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.trigger {
+  .trigger__container {
+    width: 80%;
+    margin: 5rem auto 0;
+    display: flex;
+    // left
+    .bounceInLeft {
+      width: 50%;
+      padding-right: 1.5rem;
+      .trigger__left {
+        .left__title {
+          font-size: 2.5rem;
+          color: $green-default;
+          font-weight: 500;
+          margin-bottom: 0.5rem;
+        }
+        .left__divide {
+          height: 5px;
+          width: 10%;
+          background-color: $green-default;
+        }
+        .text__container {
+          margin-top: 2rem;
+          .text__content {
+            margin: 1.5rem 0;
+            .fa {
+              color: $green-default;
+              font-size: 1.5rem;
+              margin-right: 0.7rem;
+            }
+            .text__title {
+              font-size: 1.3rem;
+              color: $green-default;
+              font-weight: 500;
+            }
+            .text__subtitle {
+              margin: 0.5rem 0;
+            }
+          }
+        }
+      }
+    }
+
+    // Right
+    .bounceInRight {
+      width: 50%;
+      .trigger__right {
+        .right__img {
+          width: 100%;
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../../../../scss/components";
+@import "../../../../../scss/reset";
+@import "../../../../../scss/variable";
+
+.cartHeader__container {
+  color: black;
+  .cartHeaderItem__container {
+    max-height: 310px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .cartHeader__payment__container {
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+    .signin__inform {
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .cartHeader__payment {
+      width: 200px;
+      margin: 0.5rem 0 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

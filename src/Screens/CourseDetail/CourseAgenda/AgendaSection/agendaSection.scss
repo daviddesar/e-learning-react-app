@@ -1,0 +1,41 @@
+@import "../../../../scss/reset";
+@import "../../../../scss/variable";
+.agenda__container {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  border-radius: 0.3rem;
+  margin: 0.5rem 0;
+  .title__container {
+    padding: 0.5rem 1rem;
+    color: $green-default;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: $green-hover;
+    }
+    .agenda__title {
+      margin-left: 0.5rem;
+      font-weight: 500;
+      font-size: 1.3rem;
+      // border-bottom: 1px solid gray;
+    }
+  }
+  .agenda__list {
+    padding-left: 1.5rem;
+    .agenda__item {
+      display: flex;
+      align-items: center;
+      color: $black-content;
+      margin: 0.5rem 0;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: $black-title;
+      }
+      .item__title {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

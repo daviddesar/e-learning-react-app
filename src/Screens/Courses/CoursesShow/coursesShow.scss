@@ -1,0 +1,15 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.coursesShow {
+    .coursesShow__container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 4rem auto 3rem;
+        justify-content: space-between;
+        .course__item {
+            margin: 1rem 0;
+        }
+    }
+}

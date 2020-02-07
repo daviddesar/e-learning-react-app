@@ -1,0 +1,98 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.card {
+  .card__container {
+    background-color: #f8f8f8;
+    width: 350px;
+    border: 0.5px solid rgba(128, 128, 128, 0.3);
+    border-radius: 0.2rem;
+    padding: 1.5rem;
+    .card__img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .stars__enroll {
+      .stars {
+        .fa-star {
+          color: $yellow-star;
+        }
+      }
+      .enroll {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+    }
+    .card__price {
+      margin-top: 0.5rem;
+      display: flex;
+      align-items: center;
+      .price {
+        font-weight: 600;
+        font-size: 1.9rem;
+        margin-bottom: 0;
+      }
+      .real__price {
+        font-size: 1.3rem;
+        text-decoration: line-through;
+        margin-left: 1rem;
+        color: $black-content;
+      }
+    }
+    .card__buttons {
+      display: flex;
+      flex-direction: column;
+      .cart__button,
+      .wishlist__button {
+        padding: 1rem 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border: transparent;
+      }
+      .cart__button {
+        color: white;
+        background-color: $green-default;
+        transition: 0.3s linear;
+        &:hover {
+          background-color: $green-hover;
+        }
+      }
+      .wishlist__button {
+        .fa {
+          margin-right: 0.5rem;
+        }
+        color: $green-default;
+        background-color: transparent;
+        border: 2px solid $green-default;
+        transition: 0.3s linear;
+        &:hover {
+          color: $green-hover;
+          border: 2px solid $green-hover;
+        }
+      }
+    }
+    .card__content {
+      margin-top: 1.5rem;
+      .content__title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+      .content__list {
+        list-style: none;
+        .list__item {
+            margin: 0.3rem 0;
+            .fa {
+                width: 20px;
+                font-size: 1.2rem;
+            }
+          .list__text {
+            margin-left: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

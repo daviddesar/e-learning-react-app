@@ -1,0 +1,58 @@
+@import '../../../../scss/components';
+@import '../../../../scss/reset';
+@import '../../../../scss/variable';
+
+.user__box {
+    padding: 0.5rem;
+    text-align: center;
+    color: green;
+    position: absolute;
+    z-index: 20;
+    display: none;
+    background-color: white;
+    top: 96%;
+    left: 85.5%;
+    width: 300px;
+    &:hover {
+      display: block;
+    }
+
+    // triangle
+    &::before {
+      position: absolute;
+      content: "";
+      top: -15px;
+      left: 135px;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid white;
+    }
+    .user__button {
+      margin: 0.5rem auto;
+      padding: 0.5rem 0;
+      width: 200px;
+      display: block;
+      font-weight: 500;
+    }
+    .user__signin {
+      color: white;
+      background-color: $green-default;
+      border: none;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $green-hover;
+      }
+    }
+    .user__signup {
+      color: $green-default;
+      background-color: white;
+      border: 2px solid $green-default;
+      transition: all 0.3s;
+      &:hover {
+        color: $green-hover;
+        border-color: $green-hover;
+      }
+    }
+  }

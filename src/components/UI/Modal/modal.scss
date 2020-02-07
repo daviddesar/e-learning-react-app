@@ -1,0 +1,23 @@
+@import "../../../scss/components";
+@import "../../../scss/variable";
+@import "../../../scss/reset";
+
+.modal {
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        .modal-title {
+          color: $green-default;
+        }
+      }
+      .modal-footer {
+        .btn-payment {
+          padding: 0.5rem 1.5rem;
+        }
+        .btn-close {
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}

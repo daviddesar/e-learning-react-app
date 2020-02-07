@@ -1,0 +1,9 @@
+@import '../../scss/reset';
+@import '../../scss/variable';
+
+.flex__column {
+    display: flex;
+    width: 80%;
+    margin: 2rem auto;
+    justify-content: space-between;
+}

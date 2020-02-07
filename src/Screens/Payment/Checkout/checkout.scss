@@ -1,0 +1,65 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.checkout {
+    // temp margin
+    margin-left: 6rem;
+    margin-top: 1rem;
+    .checkout__container {
+        width: 300px;
+        .checkout__header {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .checkout__total {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .checkout__real {
+            text-decoration: line-through;
+            font-size: 1.5rem;
+            color: rgba(128, 128, 128, 0.5);
+            margin-bottom: 0;
+        }
+        .checkout__btn {
+            background-color: $green-default;
+            border: none;
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 1.2rem;
+            color: white;
+            transition: all 0.3s;
+            &:hover {
+                background-color: $green-hover;
+            }
+        }
+        .checkout__coupon {
+            margin: 0.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            .coupon__input {
+                width: 68%;
+                border: none;
+                border-bottom: 1px solid grey;
+                padding-left: 0.5rem;
+                padding-bottom: 0.2rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .coupon__btn {
+                width: 30%;
+                border: none;
+                background-color: transparent;
+                color: $green-default;
+                padding: 0.5rem 0;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: $green-default;
+                    color: white;
+                }
+            }
+        } 
+    }
+}

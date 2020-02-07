@@ -1,0 +1,59 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+@import "../../../scss/components";
+
+.reviews {
+  margin-top: 3rem;
+  .reviews__container {
+    .reviews__header {
+      color: $green-default;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .number__bars {
+      display: flex;
+      justify-content: flex-start;
+      .reviews__number {
+        margin-right: 2.5rem;
+        border-radius: 0.4rem;
+        text-align: center;
+        width: 160px;
+        background-color: $green-default;
+        color: white;
+        padding: 1.5rem 1rem 0;
+        .number__left {
+          .number {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .comment {
+    margin: 3.5rem 0 0;
+    .comment__container {
+      display: flex;
+      align-items: flex-start;
+      .comment__img {
+        width: 80px;
+        height: auto;
+        border-radius: 0.3rem;
+      }
+      .comment__box {
+        width: 630px;
+        margin-left: 2rem;
+        border-radius: 0.3rem;
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        padding: 1rem 1.5rem;
+        .box__name {
+          font-size: 1rem;
+          font-weight: 500;
+          color: $green-default;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

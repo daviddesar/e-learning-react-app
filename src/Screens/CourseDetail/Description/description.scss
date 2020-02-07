@@ -1,0 +1,40 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.description {
+    // border-bottom: 1px solid gray;
+    .description__container {
+        .description__title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: $green-default;
+        }
+        .description__content {
+            font-size: 1rem;
+            width: 750px;
+        }
+    }
+    .description__learn {
+        margin-top: 2rem;
+        .learn__title {
+            color: $green-default;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .learn__list {
+            list-style: none;
+            margin-left: 1.5rem;
+            .learn__item {
+                display: flex;
+                align-items: center;
+                margin: 0.8rem 0;
+                .fa {
+                    color: $green-default;
+                    font-size: 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}

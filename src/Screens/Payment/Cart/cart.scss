@@ -1,0 +1,11 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.cart {
+  .cart__noti {
+    color: $green-default;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+}

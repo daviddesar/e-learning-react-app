@@ -1,0 +1,60 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+
+.featuredCourses {
+  position: relative;
+  .featuredCourses__container {
+    width: 80%;
+    margin: 4rem auto 0;
+    .featuredCourses__header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      .header__title {
+        font-size: 3rem;
+        color: $green-default;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .featuredCourses__divide {
+      margin: 1rem 0 0;
+      width: 10%;
+      height: 5px;
+      background-color: $green-default;
+      margin: 0 auto;
+      border-radius: 1rem;
+    }
+  }
+
+  // Slider
+  .courses__slider {
+      margin-top: 3rem;
+      .slick-dots {
+        bottom: -45px;
+    }
+    .slider {
+      .slider__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        // text-align: center;
+      }
+    }
+  }
+  .featureCourses__btn {
+    position: absolute;
+    top: 113%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $green-default;
+    border: none;
+    width: 250px;
+    padding: 1rem 0;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $green-hover;
+    }
+  }
+}

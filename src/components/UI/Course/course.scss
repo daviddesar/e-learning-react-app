@@ -1,0 +1,97 @@
+@import "../../../scss/reset";
+@import "../../../scss/variable";
+@import "../../../scss/components";
+
+.course__item {
+  width: 260px;
+  border-radius: 0.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  min-height: 327px;
+  &:hover .course__info {
+    opacity: 1;
+    transform: rotate(0);
+  }
+  .course-padding {
+    padding: 0 1rem;
+  }
+  .course__img {
+    border-radius: 0.2rem;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  .course__name {
+    color: $black-title;
+    font-weight: 500;
+    margin: 0.5rem 0 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    // color: $green-default;
+  }
+  .teachers__name {
+    font-size: 0.9rem;
+    color: $black-title;
+  }
+  .course__stars {
+    margin: 0.5rem 0;
+    .fa {
+      color: $yellow-star;
+    }
+  }
+  .course__enroll {
+    margin-bottom: 1rem;
+  }
+  .course__priceBuy {
+    margin: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    .price {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .btnAdd {
+      padding: 0.5rem 0.9rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .course__info {
+    // display: none;
+    opacity: 0;
+    transform: rotateY(90deg);
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 327px;
+    color: white;
+    padding: 1rem;
+    transition: all 0.3s;
+    p {
+      margin: 0;
+    }
+    .info__above {
+      cursor: pointer;
+      .info__time {
+        font-size: 0.9rem;
+      }
+      .info__title {
+        color: $green-default;
+        font-weight: 500;
+      }
+      .info__description {
+        margin-top: 0.8rem;
+      }
+      .info__detail {
+        margin-top: 0.6rem;
+        .detail__item {
+          .fa {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
