@@ -34,11 +34,11 @@ class SignInSignUpModal extends Component {
           alert("Sign up successfully!");
           this.refs.close.click();
         } else {
-          const authData = {
+          const authInfo = {
             token: response.data.idToken,
             userId: response.data.localId
           };
-          this.props.onAuthSuccess(authData);
+          this.props.onAuthSuccess(authInfo);
           alert("Sign in successfully!");
           this.refs.close.click();
         }

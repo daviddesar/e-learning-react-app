@@ -1,8 +1,8 @@
 import * as actionTypes from "./actionTypes";
 
 export const authSuccess = authInfo => {
-  localStorage.setItem("token", authInfo.idToken);
-  localStorage.setItem("userId", authInfo.localId);
+  localStorage.setItem("token", authInfo.token);
+  localStorage.setItem("userId", authInfo.userId);
   return { type: actionTypes.AUTH_SUCCESS, payload: authInfo };
 };
 export const authFail = errorInfo => {
