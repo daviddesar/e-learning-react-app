@@ -24,7 +24,6 @@ class Header extends Component {
                 <NavLink
                   to="/"
                   className="link__logo link"
-                  activeClassName="active-class"
                 >
                   <i className="fa fa-hat-wizard logo"></i>
                   <span className="logo__name">WIZARD ACADEMY</span>
