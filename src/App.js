@@ -14,6 +14,16 @@ import * as actions from "./redux/actions/indexActions";
 import { connect } from "react-redux";
 
 class App extends Component {
+  state = {
+    overScreen: null,
+    screenWidth: window.innerWidth
+  }
+  updateScreen = () => {
+    this.setState({
+      screenWidth: window.innerWidth
+    })
+  }
+
   render() {
     let renderElements = (
       <BrowserRouter>
@@ -28,9 +38,9 @@ class App extends Component {
         <Footer />
       </BrowserRouter>
     );
-    if (window.innerWidth < 1490) {
+    if (this.state.screenWidth < 1450) {
       alert(
-        "I haven't done responsive for my app, so please view my app on your laptop/PC or larger screen to prevent broken UI components\n Sorry for this inconvenience, I will fix this as soon as possible."
+        "I haven't done responsive for my app, so please view my app on your laptop/PC or larger screen to prevent broken UI components\nSorry for this inconvenience, I will fix this as soon as possible."
       );
       renderElements = (
         <p style={{ textAlign: "center", color: "red", fontWeight: "bold" }}>
@@ -44,6 +54,10 @@ class App extends Component {
   }
   componentDidMount() {
     this.props.onAutoSignin();
+    window.addEventListener('resize', this.updateScreen)
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateScreen);
   }
 }
 const mapDispatchToProps = dispatch => {
