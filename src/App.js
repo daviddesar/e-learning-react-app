@@ -25,6 +25,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.screenWidth);
     let renderElements = (
       <BrowserRouter>
         <Header />
@@ -38,10 +39,12 @@ class App extends Component {
         <Footer />
       </BrowserRouter>
     );
-    if (this.state.screenWidth < 1450) {
-      alert(
-        "I haven't done responsive for my app, so please view my app on your laptop/PC or larger screen to prevent broken UI components\nSorry for this inconvenience, I will fix this as soon as possible."
-      );
+    
+    
+    if (this.state.screenWidth < 1400) {
+      // alert(
+      //   "I haven't done responsive for my app, so please view my app on your laptop/PC or larger screen to prevent broken UI components\nSorry for this inconvenience, I will fix this as soon as possible."
+      // );
       renderElements = (
         <p style={{ textAlign: "center", color: "red", fontWeight: "bold" }}>
           Please view my app on your laptop/PC or larger screen to prevent
